@@ -223,10 +223,6 @@ button:focus {
 
 
 /*IMAGES*/
-img {
-    width: 100%;
-}
-
 hr {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -690,6 +686,16 @@ Resume Timeline
 .resume{
     position: relative;
     background-color: #1a1e23;
+}
+
+.resume .round {
+    border-radius: 25%;
+}
+
+.resume img {
+    padding-top: 5px;
+    margin-left: -15px;
+    max-width: 120px;
 }
 
 .resume:before{
