@@ -30,10 +30,9 @@
 
 
 body{
-    font-family: 'Roboto', sans-serif;
     line-height: 28px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     color:#282828;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -48,7 +47,7 @@ body, html{
 /* Link style
 ---------------------------------------------------------*/
 a {
-    color: #68c3a3;
+    color: #2ebdff;
 }
 a,
 a > * {
@@ -104,7 +103,6 @@ a,
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     margin:0;
-    text-transform: uppercase;
 }
 
 h1 {
@@ -131,7 +129,7 @@ h5 {
 }
 
 h6 {
-    font-size     : 12px;
+    font-size: 12px;
 }
 
 
@@ -146,7 +144,7 @@ h6 {
 }
 
 .form-control:focus {
-    border-color: #68c3a3;
+    border-color: #2ebdff;
     box-shadow: none;
 }
 
@@ -172,7 +170,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary{
-    background-color:#68c3a3;
+    background-color:#2ebdff;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -183,8 +181,6 @@ h6 {
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
 }
 
 /*btn-info*/
@@ -215,7 +211,7 @@ h6 {
 .btn-default.focus, 
 .btn-default:active, 
 .btn-default.active{
-    color: #68c3a3;
+    color: #2ebdff;
     background-color: #fff;
     border-color: #fff;
 }
@@ -261,7 +257,7 @@ ul.list-check li{
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
-    color: #68c3a3;
+    color: #2ebdff;
     margin-right: 10px;
 }
 
@@ -342,10 +338,10 @@ ul.list-check li::before {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 16px;
-	color: #52b3d9;
+	color: #f7fdff;
 }
 .intro h1 span{
-	color: #68c3a3;
+	color: #2ebdff;
 }
 .intro p{
 	color: #f7f7f7;
@@ -405,7 +401,7 @@ SOCIAL ICON
 }
 
 .social-icons a i:hover::after{
-    background: #68c3a3;
+    background: #2ebdff;
     border: 1px solid transparent;
     z-index: 0;
 }
@@ -456,7 +452,7 @@ SOCIAL ICON
     visibility: hidden;
     opacity:0;
     border: 1px solid #ddd;
-    border-top: 2px solid #68c3a3;
+    border-top: 2px solid #2ebdff;
     border-radius: 0;
     border-bottom: 3px double #ddd;
     background-color: #FFFFFF;
@@ -507,7 +503,7 @@ SOCIAL ICON
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
-    color: #68c3a3;
+    color: #2ebdff;
 }
 
 .navbar-custom .navbar-brand {
@@ -566,13 +562,11 @@ SOCIAL ICON
 .biography{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border:1px solid #EEEEEE;
     position: relative;
 }
 
 .biography::after{
     content: "";
-    border-bottom: 1px solid #EEEEEE;
     position: absolute;
     bottom: -3px;
     width: 100%;
@@ -582,13 +576,14 @@ SOCIAL ICON
 
 .myphoto{
     position: relative;
-    background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
     background-size: contain;
 }
 
 .myphoto img{
     position: relative;
-    z-index: -1;
+    border-radius: 50%;
+    max-height: 256px;
+    max-width: 256px;
 }
 
 .biography ul{
@@ -652,18 +647,40 @@ SOCIAL ICON
 /*---------------------------------------------------------
 Resume Timeline
 -----------------------------------------------------------*/
+
+.resume-section {
+    background-color: #1a1e23;
+    color: #fff;   
+}
+.resume-section .section-title{
+    color: #fff;
+    margin-bottom: 110px;  
+}
+.resume-section .section-title h2{
+    color: #fff;
+}
+.resume-title {
+    margin-bottom: 30px;
+}
+.resume-title h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -6px;
+    text-transform: capitalize;
+}
+
 .resume-title h3{
     text-align: center;
 }
+
 .resume-section > div > div{
     margin-bottom: 60px;
+    background-color: #1a1e23;
 }
 .resume-section > div > div:nth-of-type(2){
     margin-bottom: 0;
 }
-.resume-title{
-    margin-bottom: 30px;
-}
+
 .timeline {
     position: relative;
     padding: 0;
@@ -672,6 +689,7 @@ Resume Timeline
 
 .resume{
     position: relative;
+    background-color: #1a1e23;
 }
 
 .resume:before{
@@ -680,7 +698,7 @@ Resume Timeline
     top: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #22272e;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -696,7 +714,7 @@ Resume Timeline
     bottom: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #22272e;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -713,7 +731,7 @@ Resume Timeline
     bottom: 0;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #e1e1e1;
+    background-color: #22272e;
 }
 
 .timeline>li {
@@ -805,11 +823,8 @@ Resume Timeline
     display: block;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #2ebdff;
 }
-
-
-
-
 
 @media(min-width:992px) {
 .timeline:before {
@@ -824,21 +839,19 @@ Resume Timeline
 .timeline>li .posted-date {
     position: absolute;
     text-align: center;
-    background-color: #fff;
+    background-color: #1a1e23;
 }
 
 .timeline>li .timeline-panel {
     float: left;
     width: 43%;
-    text-align: right;
-    border: 1px solid #eee;
     position: relative;
 }
 
 .timeline-content{
     position: relative;
     padding: 24px;
-    background-color: #fff;
+    background-color: #22272e;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
@@ -846,7 +859,6 @@ Resume Timeline
 }
 
 .timeline-content::after{
-    border: 1px solid #eee;
     width: 100%;
     position: absolute;
     content: "";
@@ -854,11 +866,6 @@ Resume Timeline
     height:10px;
     left: 0;
     z-index: -1;
-}
-
-.timeline>li .timeline-content:hover {
-    background: #68c3a3;
-    color: #fff;
 }
 
 .timeline>li .timeline-panel::before,
@@ -871,27 +878,21 @@ Resume Timeline
 }
 .timeline>li .timeline-panel::before {
     left: 100%;
-    border-left: 12px solid #ECECEC;
+    border-left: 12px solid #22272e;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
-.timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
-}
+
 
 .timeline>li.timeline-inverted .timeline-panel::before {
     right: 100%;
-    border-right: 12px solid #ECECEC;
+    border-right: 12px solid #22272e;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
-}
-.timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
-    border-left: 0;
 }
 
 .timeline>li .timeline-panel::after,
@@ -905,27 +906,27 @@ Resume Timeline
 .timeline>li .timeline-panel::after {
     left: 100%;
     margin-left: -2px;
-    border-left: 12px solid #FFFFFF;
+    border-left: 12px solid #22272e;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #22272e;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
     right: 100%;
     margin-right:-2px;
-    border-right: 12px solid #FFFFFF;
+    border-right: 12px solid #22272e;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #22272e;
     border-left: 0;
 }
 
@@ -937,6 +938,7 @@ Resume Timeline
 }
 .timeline>li .posted-date .month {
     float: none;
+    color: white
 }
 
 
@@ -984,7 +986,7 @@ Resume Timeline
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #2ebdff;
 }
 .progress-bar span{
     position: absolute;
@@ -1095,7 +1097,7 @@ Resume Timeline
 
 
 #filter li a {
-    color: #68c3a3;
+    color: #2ebdff;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -1105,7 +1107,7 @@ Resume Timeline
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #68c3a3;
+    background: #2ebdff;
     color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
@@ -1162,7 +1164,7 @@ Resume Timeline
 
 .links a i{
     position: relative;
-    color: #68c3a3;
+    color: #2ebdff;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -1177,7 +1179,7 @@ Resume Timeline
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #2ebdff;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1187,14 +1189,14 @@ Resume Timeline
             transform: rotate(45deg);
 }
 .links a:hover i::after {
-    background-color: #68c3a3;
+    background-color: #2ebdff;
 }
 
 .portfolio-info {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: #68c3a3;
+    background-color: #2ebdff;
     color: #fff;
     height: 45px;
     width: 100%;
@@ -1304,7 +1306,7 @@ Resume Timeline
     top: -10px;
     width: 40px;
     height: 40px;
-    background-color: #68c3a3;
+    background-color: #2ebdff;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1356,7 +1358,7 @@ Resume Timeline
     color: #282828;
 }
 .entry-title a:hover{
-    color: #68c3a3;
+    color: #2ebdff;
 }
 .entry-meta {
     color: #afafaf;
@@ -1373,7 +1375,7 @@ Resume Timeline
     font-weight: 400;
 }
 .entry-meta ul li a:hover{
-    color: #68c3a3;
+    color: #2ebdff;
 }
 
 .blog-more {
@@ -1415,17 +1417,17 @@ Icon for all respective meta
 
 /* === Hire Section === */
 .hire-section {
-    background: url(../../assets/images/hire-bg.jpg) no-repeat top center #68C3A3;
+    background: url(../../assets/images/hire-bg.png) no-repeat top center #000000;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
 }
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #2ebdff, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, #2ebdff, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, #2ebdff, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #2ebdff, rgba(104, 195, 163, 0.7)); /*Standard*/
 }
 
 .hire-section h2 {
@@ -1515,7 +1517,7 @@ Icon for all respective meta
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
+	background-color: #2ebdff;
 	display: block;
 	width: 28px;
 	height: 28px;
@@ -1775,7 +1777,7 @@ Icon for all respective meta
 }
 
 .personal-info h1 span{
-    color:#68c3a3;
+    color:#2ebdff;
 }
 .personal-info p {
     margin-bottom: 40px;
